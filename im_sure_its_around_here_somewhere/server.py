@@ -9,9 +9,6 @@ aws_secret_access_key=os.environ['AWS_SECRET_ACCESS_KEY'])
 
 app = Flask(__name__)
 
-# AKIA27FNVNFIQTESZG42
-# Wyz7ZfVjY9glVjZTHJz9endsgytcE3TSEcZvWwBh
-
 @app.route('/', methods=['GET', 'POST'])
 def index():
     response = s3.list_objects(Bucket=os.environ['BUCKET'])
