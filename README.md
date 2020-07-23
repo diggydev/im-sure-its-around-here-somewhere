@@ -4,4 +4,4 @@ local.sh
 
 # Deploy
 
-pipenv lock -r
+pipenv lock -r > requirements.txt
